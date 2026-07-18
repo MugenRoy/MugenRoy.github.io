@@ -2,6 +2,8 @@
     --text-color: #c9d1d9;
     --light-text: rgba(229, 239, 240, 70%);
     --accent-color: #C0E6DE;
+    --border-color: #2A4648;
+
 }
 
 body {
@@ -28,8 +30,10 @@ a:hover {
     min-height: 80vh;
     margin: 0 auto;
     padding: 50px;
-    border: 1px solid var(--light-text);
+    border: 1px solid var(--border-color);
     background-color: #0d0d0d;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -57,8 +61,8 @@ nav {
     justify-content: center;
     gap: 25px;
     margin: 30px 0;
-    border-top: 1px solid var(--light-text);
-    border-bottom: 1px solid var(--light-text);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
     padding: 15px;
 }
 
@@ -91,15 +95,6 @@ nav {
     display: block;
 }
 
-#about {
-    margin-top: 40px;
-}
-
-#skills {
-    margin-top: 40px;
-    font-size: 0.95rem;
-}
-
 #skills strong {
     font-weight: 500;
     color: #FDFFFC;
@@ -113,7 +108,7 @@ nav {
 .project-item {
     margin-bottom: 30px;
     padding-bottom: 20px;
-    border-bottom: 1px dashed var(--light-text);
+    border-bottom: 1px dashed var(--border-color);
 }
 
 .project-item:last-child {
@@ -150,11 +145,11 @@ nav {
 
 
 footer {
-    margin-top: 60px;
+    margin-top: auto;
     text-align: left;
     font-size: 0.9rem;
     color: var(--light-text);
-    border-top: 1px solid var(--light-text);
+    border-top: 1px solid var(--border-color);
     padding-top: 20px;
 }
 
