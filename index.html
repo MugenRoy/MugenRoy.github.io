@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Shaswata Roy (Portfolio)</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css"/>
+        <script src="main.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="box">
+            <header>
+                <h1 id="title">Shaswata Roy</h1>
+                <p id="subtitle">Game Developer & Systems Programmer</p>
+                <nav>
+                    <button class="nav-btn active" onclick="switchTab(event, 'about')">About Me</button>
+                    <button class="nav-btn" onclick="switchTab(event, 'skills')">Skills</button>
+                    <button class="nav-btn" onclick="switchTab(event, 'projects')">Projects</button>
+                    <button class="nav-btn" onclick="switchTab(event, 'education')">Education</button>
+                </nav>
+            </header>
+            <div id="about" class="tab-content active-content">
+                <p>
+                    I am a passionate gamer and developer specializing in gameplay mechanics, systems engineering and engine tools.
+                    Most of my game engine experience is built within Godot. Besides just gameplay design, I enjoy building low-level developer tools, custom languages and modding games to understand how software works under the hood.
+                </p>
+            </div>
+            <div id="skills" class="tab-content">
+                <p>A simple categorization of my skills:<br>
+                    <strong>Game Engines:</strong>  Godot Engine (GDScript focus), Unreal Engine, Unity Engine.<br>
+                    <strong>Languages:</strong> C, C++, C#, Java, Kotlin, Go, Python, Zig, Odin, Rust.<br>
+                    <strong>Tools & Build Systems:</strong> Ninja, Beaver, Git and VS Code extension development.<br>
+                    <strong>Other:</strong> Reinforcement learning basics, game modding, competitive programming (Codeforces 800–1000) and low-poly 3d modeling using Blender. Can adapt or learn new things quickly.
+                </p>
+            </div>
+            <div id="projects" class="tab-content">
+                <div class="project-item">
+                    <p class="project-title">Bottle Blitz</p>
+                    <p class="project-tech">Godot Engine / GDScript / Python</p>
+                    <p>A 4 player game where the first player to steal 3 bottles from the center zone to their own zone wins. Any player can steal from another player zones. It features a traditional game AI (scripted) and a rl agent AI to play against.</p>
+                    <img class="project-img" src="assets/images/Bottle-Blitz.png">
+                </div>
+
+                <div class="project-item">
+                    <p class="project-title">Beaver Build System</p>
+                    <p class="project-tech">C / Ninja</p>
+                    <p>Super-fast, lightweight and easy to use build utility that interacts with Ninja to compile, run custom commands for C/C++ projects.</p>
+                    <img class="project-img" src="assets/images/Beaver.png">
+                </div>
+
+                <div class="project-item">
+                    <p class="project-title">Eyn Programming Language (Working Name)</p>
+                    <p class="project-tech">Go / Eyn (Bootstrap)</p>
+                    <p>It is a simple, opinionated and fast-compiling systems language that prioritizes uniformity and explicitness over heavy abstraction. (In Active Development)</p>
+                    <img class="project-img" src="assets/images/Eyn.png">
+                </div>
+
+                <div class="project-item">
+                    <p class="project-title">Nightfall Coder (Vscode Theme)</p>
+                    <p class="project-tech">Json</p>
+                    <p>Nightfall Coder is a balanced, minimalist dark theme designed for Visual Studio Code (VS Code).
+                        Click <a href="https://marketplace.visualstudio.com/items?itemName=Mugen.nightfall-coder">here</a> to try it from vscode marketplace.</p>
+
+                    <img class="project-img" src="assets/images/Nightfall-coder.png">
+                </div>
+            </div>
+            <div id="education" class="tab-content">
+                <p>
+                    <strong>Chittagong Government High School (2019-2020)</strong><br>
+                    Secondary School Certificate Examination<br>
+                    Chattagram, Bangladesh<br>
+                    5.00<br><br>
+                    <strong>Nou Bahini School And College, Chattogram (2021-2022)</strong><br>
+                    Higher Secondary Certificate Examination<br>
+                    Chattagram, Bangladesh<br>
+                    5.0<br><br>
+                    <strong>Chittagong independent university (Running)</strong><br>
+                    Bachelor of Science (CSE)<br>
+                </p>
+            </div>
+            <footer>
+                <strong>Contacts</strong><br>
+                <p>
+                    Github Profile: <a href="https://github.com/MugenRoy">Shaswata Roy</a><br>
+                    Email: <a href="mailto:shaswataroy05@gmail.com">shaswataroy05@gmail.com</a>
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>
