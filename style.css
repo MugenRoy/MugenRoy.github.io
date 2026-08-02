@@ -4,6 +4,24 @@
     --accent-color: #C0E6DE;
     --border-color: #2A4648;
 
+    --bg-color: #000100;
+    --box-bg: #0d0d0d;
+    --title-color: #5db0a4;
+    --strong-color: #FDFFFC;
+    --bg-image: url("assets/images/Background.png");
+}
+
+[data-theme="light"] {
+    --text-color: #2b2d42;
+    --light-text: rgba(43, 45, 66, 75%);
+    --accent-color: #006666;
+    --border-color: #cbd5e0;
+    --bg-color: #e2e8f0;
+    --box-bg: #ffffff;
+    --title-color: #004d4d;
+    --strong-color: #1a202c;
+    --bg-image: none;
+
 }
 
 body {
@@ -11,7 +29,7 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     padding: 20px 20px;
-    background: radial-gradient(circle at center, transparent 20%, #000100 75%), url("assets/images/Background.png");
+    background: radial-gradient(circle at center, transparent 20%, var(--bg-color) 75%), var(--bg-image);
     background-repeat: no-repeat, repeat;
 }
 
@@ -31,7 +49,7 @@ a:hover {
     margin: 0 auto;
     padding: 50px;
     border: 1px solid var(--border-color);
-    background-color: #0d0d0d;
+    background-color: var(--box-bg);
     display: flex;
     flex-direction: column;
 }
@@ -44,7 +62,7 @@ header {
     font-family: 'Playfair Display', serif;
     font-size: 2.8rem;
     font-weight: 600;
-    color: #5db0a4;
+    color: var(--title-color);
     margin-bottom: 10px;
 }
 
@@ -97,7 +115,7 @@ nav {
 
 #skills strong {
     font-weight: 500;
-    color: #FDFFFC;
+    color: var(--strong-color);
 }
 
 .project-img {
